@@ -19,10 +19,12 @@ vi .zshrc and add ZSH_THEME="powerlevel10k/powerlevel10k”
 source .zshrc
 ```
 
-### install node and npm
+### install node and tree-sitter-cli
 
 ```
-sudo snap install node --classic --channel=14
+snap install node --classic --channel=14
+npm install -g tree-sitter-cli
+yarn global add tree-sitter-cli
 ```
 
 ### install latest version of nvim
