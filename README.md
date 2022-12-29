@@ -19,6 +19,15 @@ vi .zshrc and add ZSH_THEME="powerlevel10k/powerlevel10k"
 source .zshrc
 ```
 
+### ripgrep & fd-find install manually
+
+```
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
+curl -LO https://github.com/sharkdp/fd/releases/download/v8.6.0/fd-musl_8.6.0_amd64.deb
+sudo dpkg -i fd-musl_8.6.0_amd64.deb
+```
+
 ### install node and tree-sitter-cli
 
 ```
