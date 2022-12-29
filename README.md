@@ -2,14 +2,14 @@
 
 Linux & Mac terminal setup files
 
-## nvim setup
+### nvim setup
 
 ```
 cp nvim ~/.config/
 nvim ~/.config/nvim/init.lua
 ```
 
-## linux setup
+### linux setup
 
 ```
 sudo apt install zsh git curl fd-find ripgrep python-dev python3-dev
@@ -19,13 +19,13 @@ vi .zshrc and add ZSH_THEME="powerlevel10k/powerlevel10k”
 source .zshrc
 ```
 
-# install node and npm
+### install node and npm
 
 ```
 sudo snap install node --classic --channel=14
 ```
 
-# install latest version of nvim
+### install latest version of nvim
 
 ```
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
