@@ -134,6 +134,7 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
+	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 	-- chatGPT integration
 	-- use({
 	-- 	"jackMort/ChatGPT.nvim",

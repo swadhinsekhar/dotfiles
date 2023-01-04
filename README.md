@@ -43,3 +43,13 @@ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 sudo ln -s ~/.config/nvim/nvim.appimage /usr/bin/nvim
 alias vi=nvim   # add in .zshrc
 ```
+
+### tmux setup
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp tmux ~/.tmux.conf
+
+<prefix> + I    #install plugins
+<prefix> + U    #update plugins
+```
