@@ -120,13 +120,6 @@ return packer.startup(function(use)
 	-- install without yarn or npm
 	use({
 		"iamcco/markdown-preview.nvim",
-		run = function()
-			vim.fn["mkdp#util#install"]()
-		end,
-	})
-
-	use({
-		"iamcco/markdown-preview.nvim",
 		run = "cd app && npm install",
 		setup = function()
 			vim.g.mkdp_filetypes = { "markdown" }
@@ -134,7 +127,12 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
+	-- tabular formating
+	use("godlygeek/tabular")
+
+	-- management of tag files
+	use("ludovicchabant/vim-gutentags")
+	use("skywind3000/gutentags_plus")
 	-- chatGPT integration
 	-- use({
 	-- 	"jackMort/ChatGPT.nvim",

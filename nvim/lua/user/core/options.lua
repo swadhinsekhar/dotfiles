@@ -17,6 +17,9 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- make indenting smarter
+opt.smartindent = true
+
 -- cursor line
 opt.cursorline = true
 
@@ -40,3 +43,10 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+
+local api = vim.api
+-- go to last loc when opening a buffer
+api.nvim_create_autocmd(
+	"BufReadPost",
+	{ command = [[if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif]] }
+)

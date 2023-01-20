@@ -27,6 +27,27 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to prev tab
 
+-- Navigate Buffers
+-- keymap.set("n", "S-l", ":bnext<CR>")
+-- keymap.set("n", "S-h", ":bprevious<CR>")
+
+-- visual
+-- stay in indent mode
+keymap.set("n", "<", "<gv")
+keymap.set("n", ">", ">gv")
+
+-- Move text up and down
+keymap.set("v", "<A-j>", ":m .+1<CR>==")
+keymap.set("v", "<A-k>", ":m .-2<CR>==")
+keymap.set("v", "p", '"_dP')
+
+-- Visual Block --
+-- Move text up and down
+keymap.set("x", "J", ":move '>+1<CR>gv-gv")
+keymap.set("x", "K", ":move '<-2<CR>gv-gv")
+keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv")
+keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv")
+
 -- plugin keymaps
 
 -- vim-maximazier
