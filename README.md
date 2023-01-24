@@ -12,11 +12,19 @@ nvim ~/.config/nvim/init.lua
 ### linux setup
 
 ```
-sudo apt install zsh git curl fd-find ripgrep python-dev python3-dev
+sudo apt install zsh git curl fd-find ripgrep python-dev python3-dev python3-venv
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 vi .zshrc and add ZSH_THEME="powerlevel10k/powerlevel10k"
 source .zshrc
+```
+
+### install latest version of nvim
+
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+sudo ln -s ~/.config/nvim/nvim.appimage /usr/bin/nvim
+alias vi=nvim   # add in .zshrc
 ```
 
 ### ripgrep & fd-find install manually
@@ -34,14 +42,6 @@ sudo dpkg -i fd-musl_8.6.0_amd64.deb
 snap install node --classic --channel=14
 npm install -g tree-sitter-cli
 yarn global add tree-sitter-cli
-```
-
-### install latest version of nvim
-
-```
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-sudo ln -s ~/.config/nvim/nvim.appimage /usr/bin/nvim
-alias vi=nvim   # add in .zshrc
 ```
 
 ### tmux setup
