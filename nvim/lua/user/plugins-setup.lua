@@ -133,20 +133,8 @@ return packer.startup(function(use)
 	-- management of tag files
 	use("ludovicchabant/vim-gutentags")
 	use("skywind3000/gutentags_plus")
-	-- chatGPT integration
-	-- use({
-	-- 	"jackMort/ChatGPT.nvim",
-	-- 	config = function()
-	-- 		require("chatgpt").setup({
-	-- 			-- optional configuration
-	-- 		})
-	-- 	end,
-	-- 	requires = {
-	-- 		"MunifTanjim/nui.nvim",
-	-- 		"nvim-lua/plenary.nvim",
-	-- 		"nvim-telescope/telescope.nvim",
-	-- 	},
-	-- })
+	use("brookhong/cscope.vim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
