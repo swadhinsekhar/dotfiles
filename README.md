@@ -13,7 +13,7 @@ nvim ~/.config/nvim/init.lua
 
 ```
 sudo apt install zsh git curl fd-find ripgrep python-dev \
-python3-dev python3-venv unzip fontconfig gperf xsel -y
+python3-dev python3-venv unzip fontconfig gperf xsel net-tools -y
 
 ```
 
@@ -61,6 +61,13 @@ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 curl -LO https://github.com/sharkdp/fd/releases/download/v8.6.0/fd-musl_8.6.0_amd64.deb
 sudo dpkg -i fd-musl_8.6.0_amd64.deb
+```
+
+#### Resolving EACCES permissions errors when installing packages globally
+
+```
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
 ```
 
 #### install node and tree-sitter-cli

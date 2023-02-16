@@ -22,16 +22,34 @@
 ### lsp saga commands
 
 ```
-"gf"         : Lspsaga lsp_finder<CR>                  -- show definition, references
-"gD"         :                                         -- got to declaration
-"gd"         : Lspsaga peek_definition<CR>             -- see definition and make edits in window
-"gi"         : lua vim.lsp.buf.implementation()<CR>    -- go to implementation
-"<leader>ca" : Lspsaga code_action<CR>                 -- see available code actions
-"<leader>rn" : Lspsaga rename<CR>                      -- smart rename
-"<leader>D"  : Lspsaga show_line_diagnostics<CR>       -- show  diagnostics for line
-"<leader>d"  : Lspsaga show_cursor_diagnostics<CR>     -- show diagnostics for cursor
-"[d"         : Lspsaga diagnostic_jump_prev<CR>        -- jump to previous diagnostic in buffer
-"]d"         : Lspsaga diagnostic_jump_next<CR>        -- jump to next diagnostic in buffer
-"K"          : Lspsaga hover_doc<CR>                   -- show documentation for what is under cursor
-"<leader>o"  : LSoutlineToggle<CR>                     -- see outline on right hand side
+["K"]  = { "Show hover"             }
+["gd"] = { "Goto Definition"        }
+["gD"] = { "Goto declaration"       }
+["gr"] = { "Goto references"        }
+["gI"] = { "Goto Implementation"    }
+["gs"] = { "show signature help"    }
+["gl"] = { "Show line diagnostics"  }
 ```
+
+#### VIM Surround uses
+
+    For example, if you have the following sentence:
+
+    "Vim plugins are awesome !"
+
+    You can remove the quotation marks around the sentence by pressing the
+    combination `ds"` while your cursor is anywhere between the quotation marks:
+
+    Vim plugins are awesome !
+
+    You can also change the double quotation marks to single quotation marks with the command `cs"'`:
+
+    'Vim plugins are awesome !'
+
+    Or replace them with brackets by pressing `cs'[`
+
+    [ Vim plugins are awesome ! ]
+
+#### snipsets for c program
+
+https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/c.json
