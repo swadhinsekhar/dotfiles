@@ -110,3 +110,10 @@ export NPMPATH=~/.npm-global/bin
 export LVIMPATH=/home/sbe200/.local/bin
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:$GOROOT/bin:$NPMPATH:$LVIMPATH
 ```
+
+
+#### TabNine install
+
+```
+.local/share/lunarvim/site/pack/packer/start/cmp-tabnine/install.sh
+```
