@@ -40,6 +40,7 @@ return packer.startup(function(use)
 	-- My plugins here
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
+	use("NLKNguyen/papercolor-theme")
 	use("bluz71/vim-nightfly-guicolors") -- prefered colorscheme
 	use({ "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" })
 	use({ "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" })
